@@ -1,4 +1,4 @@
-# Codex 产品开发工具包
+# Codex Product Studio
 
 这是一个本地 Codex 插件，用于把产品从 idea 推到可实现、可检查、可上线的闭环流程。它重点解决三类问题:
 
