@@ -5,7 +5,7 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 
 # Product Loop Development
 
-把“一个想法”约束成可实现、可使用、可验证的前后端产品闭环。优先解决这七类失败：
+把“一个想法”约束成可实现、可使用、可验证的前后端产品闭环。优先解决这九类失败：
 
 - 功能排序混乱：没有按使用频率、用户价值、业务优先级和风险安排入口。
 - 功能按键散乱：没有主动作、次动作、危险动作、状态和反馈。
@@ -15,6 +15,7 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 - 前后端不闭环：UI 有按钮，后端没有契约；接口有字段，页面没有状态；功能有入口，缺少验收。
 - 内部说明泄露：把 PRD、实现策略、设计原则、“我们要/不要怎么做”直接写到前端页面。
 - 素材风格割裂：logo、背景、插画、图标、空状态和社交预览没有统一视觉资产系统。
+- 产品类型误判：所有产品都套成同一种 dashboard、landing page 或卡片流，而不是根据用户任务选择合适的产品表面。
 
 ## 触发后先做
 
@@ -24,6 +25,7 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 4. 如果用户只要求查找或决策，不要擅自实现；如果用户要求“搞一套/做出来/落地”，直接创建文件或改代码。
 5. 前端实现前，把内容分成三类：用户可见文案、PRD/内部说明、代码/工程说明。只有第一类可以进入 UI。
 6. 涉及前端页面、2C 产品、官网、工作台、dashboard、AI 工具或功能改造时，必须先输出“PM 前置判断”：产品定位、目标用户、功能优先级、动线模型、按钮摆放依据、首屏策略和素材库计划。
+7. 涉及从零生成、重构或大改产品体验时，先读取 `references/14-product-quality-standard.md`，选择合适的通用产品表面，并建立质量门槛。
 
 ## 主流程
 
@@ -41,10 +43,13 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 
 涉及产品经理思维、功能排序、按钮位置、用户使用频率、2C 首屏、目标用户、产品定位、动线结构或素材库时，读取 `references/13-pm-prioritization-flow-and-2c-ux.md`。
 
+涉及产品类型判断、页面结构泛化、成熟产品质量标准或避免套用具体案例时，读取 `references/14-product-quality-standard.md`。
+
 ### 2. 信息架构和动线
 
 先定结构，再定视觉：
 
+- 产品表面：先选择 entry、workflow、management、editor、reader、asset、monitoring 或 settings 等通用表面，再决定布局。
 - 全局导航：用户从哪里进入。
 - 页面层级：每页只承担一个主要目的。
 - 任务步骤：复杂任务用 stepper、tabs、分段表单或向导承接。
@@ -121,12 +126,14 @@ bash scripts/check-product-loop.sh <project-path>
 - 功能优先级表
 - 用户任务流
 - 动线模型
+- 产品表面模型
 - 页面/路由地图
 - 动作层级表
 - 首屏策略
 - 素材库计划
 - 前后端契约
 - 状态矩阵
+- 质量门槛
 - 验收清单
 
 做代码时输出：

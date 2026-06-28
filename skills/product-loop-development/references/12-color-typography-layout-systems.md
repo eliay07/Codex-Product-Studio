@@ -30,6 +30,8 @@
 
 每个颜色必须说明用途，不允许只写“好看”“高级”“科技感”。
 
+色彩系统不得从另一个具体产品直接复制命名、品牌色或业务语义。可以复用方法：角色色、色阶、语义色、状态色、60/30/10 比例、对比度检查。
+
 ## 专业配色比例
 
 默认使用 60 / 30 / 10:
@@ -189,6 +191,8 @@ error
 2. 字体层级表: token / size / line-height / weight / 使用位置
 3. 布局网格表: 页面边距 / 栅格 / gap / max-width / 响应式断点
 4. 状态映射表: success / warning / danger / info / disabled / selected
+5. 图标语义表: 概念 / 图标 / 使用位置 / aria-label 或 tooltip
+6. 素材清单: logo / favicon / empty / loading / success / error / preview / social image
 ```
 
 然后再写代码或改 CSS。
