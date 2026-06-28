@@ -5,12 +5,16 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 
 # Product Loop Development
 
-把“一个想法”约束成可实现、可使用、可验证的前后端产品闭环。优先解决这四类失败：
+把“一个想法”约束成可实现、可使用、可验证的前后端产品闭环。优先解决这七类失败：
 
+- 功能排序混乱：没有按使用频率、用户价值、业务优先级和风险安排入口。
 - 功能按键散乱：没有主动作、次动作、危险动作、状态和反馈。
 - 使用动线不清：用户不知道第一步、第二步、第三步在哪里。
+- 2C 首屏失败：首屏没有展示最高频、最吸引人、最能说明产品用途的入口。
+- 按钮摆放无依据：同一级页面的动作位置只是随机堆放，不符合用户操作习惯。
 - 前后端不闭环：UI 有按钮，后端没有契约；接口有字段，页面没有状态；功能有入口，缺少验收。
 - 内部说明泄露：把 PRD、实现策略、设计原则、“我们要/不要怎么做”直接写到前端页面。
+- 素材风格割裂：logo、背景、插画、图标、空状态和社交预览没有统一视觉资产系统。
 
 ## 触发后先做
 
@@ -19,6 +23,7 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 3. 如果是改造已有产品，先做“动线和按钮审计”，再改 UI 或接口。
 4. 如果用户只要求查找或决策，不要擅自实现；如果用户要求“搞一套/做出来/落地”，直接创建文件或改代码。
 5. 前端实现前，把内容分成三类：用户可见文案、PRD/内部说明、代码/工程说明。只有第一类可以进入 UI。
+6. 涉及前端页面、2C 产品、官网、工作台、dashboard、AI 工具或功能改造时，必须先输出“PM 前置判断”：产品定位、目标用户、功能优先级、动线模型、按钮摆放依据、首屏策略和素材库计划。
 
 ## 主流程
 
@@ -33,6 +38,8 @@ description: "Use when building, redesigning, reviewing, or planning a frontend/
 - 当前版本不做什么：避免功能无限扩张。
 
 需要细节时读取 `references/01-product-loop-workflow.md`。
+
+涉及产品经理思维、功能排序、按钮位置、用户使用频率、2C 首屏、目标用户、产品定位、动线结构或素材库时，读取 `references/13-pm-prioritization-flow-and-2c-ux.md`。
 
 ### 2. 信息架构和动线
 
@@ -110,9 +117,14 @@ bash scripts/check-product-loop.sh <project-path>
 做计划时输出：
 
 - 产品闭环一句话
+- 产品定位和目标用户
+- 功能优先级表
 - 用户任务流
+- 动线模型
 - 页面/路由地图
 - 动作层级表
+- 首屏策略
+- 素材库计划
 - 前后端契约
 - 状态矩阵
 - 验收清单
@@ -133,4 +145,5 @@ bash scripts/check-product-loop.sh <project-path>
 - `joshuadavidthomas/agent-skills` 的 `frontend-design-principles`：从用户、任务、领域语言出发，避免通用 AI UI。
 - Material Design / Atlassian Design System：主次按钮和动作层级。
 - Material Design / Apple HIG / IBM Carbon / Atlassian Design System：色彩角色、语义 token、状态色、对比度、亮暗模式和专业设计系统方法。
+- NN/g usability heuristics / visual hierarchy、Material Design FAB、Apple HIG navigation：识别优先于记忆、视觉层级、主动作聚焦、熟悉导航模式和渐进披露。
 - OpenAI Codex customization / skills 文档：用 skill 承载可复用工作流。

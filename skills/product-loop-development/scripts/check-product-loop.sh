@@ -66,8 +66,13 @@ echo
 
 echo "二、产品闭环信号"
 check_text "用户任务/目标用户描述" "目标用户|用户任务|使用动线|用户旅程|job-to-be-done|JTBD"
+check_text "产品定位/最高频场景/用户成功瞬间" "产品定位|最高频场景|成功瞬间|目标用户|用户价值|业务价值"
+check_text "功能优先级/使用频率排序" "功能优先级|使用频率|高频|低频|用户价值|业务价值|优先级"
 check_text "步骤/流程描述" "第一步|第二步|第三步|Step 1|stepper|流程|动线"
+check_text "动线模型选择" "线性向导|hub and spoke|列表-详情|画布-工具栏|搜索-筛选|仪表盘-下钻|动线模型"
+check_text "2C 首屏/转化策略" "首屏|2C|转化|试用|开始路径|最高频动作|结果预期"
 check_text "按钮层级描述" "Primary|primary|主动作|次动作|危险动作|CTA"
+check_text "按钮摆放依据" "按钮摆放|动作位置|页面级主动作|对象级动作|批量操作|危险动作"
 check_text "状态覆盖描述" "loading|empty|error|disabled|success|空状态|错误状态|加载"
 check_text "接口/数据契约描述" "API|接口|响应|错误码|权限|schema|contract|契约"
 echo
@@ -84,6 +89,7 @@ echo "四、视觉系统信号"
 check_text "色彩 token / 主题变量" "primary|secondary|accent|surface|--color-|theme|tokens|semantic|语义色|色彩角色"
 check_text "字体层级 / 排版规则" "font-size|line-height|typography|page-title|section-title|字体层级|排版"
 check_text "布局网格 / 间距规则" "grid|gap|max-width|spacing|breakpoint|断点|间距|网格"
+check_text "素材库 / 品牌资产计划" "素材库|brand assets|logo|wordmark|favicon|hero background|empty state|social preview|产品截图"
 check_ui_leak "组件内散落裸 hex 色值" "#[0-9a-fA-F]{3,8}"
 echo
 
