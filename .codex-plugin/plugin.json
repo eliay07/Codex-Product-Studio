@@ -1,7 +1,7 @@
 {
   "name": "codex-product-dev-kit",
-  "version": "0.1.0+codex.20260628191146",
-  "description": "Reusable Codex skills that make product work start with PM judgment, mature UX standards, design systems, backend contracts, QA, release, and feedback loops.",
+  "version": "0.1.0+codex.20260629203000",
+  "description": "Reusable Codex skills that make product work start with PM judgment, post-submit clarification, interaction depth, mature UX standards, design systems, backend contracts, QA, release, and feedback loops.",
   "author": {
     "name": "Eliayan local workspace"
   },
@@ -11,6 +11,7 @@
     "codex",
     "product-development",
     "frontend",
+    "interaction-design",
     "backend",
     "testing",
     "deployment"
@@ -18,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Codex Product Studio",
-    "shortDescription": "\u7528 PM \u5224\u65ad\u3001\u6210\u719f UX \u548c\u5de5\u7a0b\u95ed\u73af\u7ea6\u675f Codex \u751f\u6210\u4ea7\u54c1\u3002",
-    "longDescription": "Codex Product Studio \u662f\u4e00\u5957\u9762\u5411\u4ea7\u54c1\u5f00\u53d1\u7684\u53ef\u590d\u7528 skills\uff0c\u8981\u6c42 Codex \u5728\u5199\u524d\u7aef\u4ee3\u7801\u4e4b\u524d\uff0c\u5148\u5b8c\u6210\u4ea7\u54c1\u5b9a\u4f4d\u3001\u76ee\u6807\u7528\u6237\u3001\u529f\u80fd\u4f18\u5148\u7ea7\u3001\u901a\u7528\u4ea7\u54c1\u8868\u9762\u3001\u52a8\u7ebf\u6a21\u578b\u3001\u6309\u94ae\u6446\u653e\u3001\u72b6\u6001\u77e9\u9635\u3001\u8bbe\u8ba1 token\u3001\u7d20\u6750\u5e93\u548c\u524d\u540e\u7aef\u5951\u7ea6\u5224\u65ad\u3002\u5b83\u5e2e\u52a9\u51cf\u5c11 PRD \u5f0f UI\u3001\u968f\u673a dashboard\u3001\u6742\u4e71\u6309\u94ae\u3001\u4e0d\u7edf\u4e00\u914d\u8272\u3001\u72b6\u6001\u7f3a\u5931\u548c\u63d0\u793a\u8bcd\u6c61\u67d3\uff0c\u5e76\u628a\u6d4b\u8bd5\u3001\u53d1\u5e03\u3001\u76d1\u63a7\u548c\u53cd\u9988\u7eb3\u5165\u5b8c\u6574\u95ed\u73af\u3002",
+    "shortDescription": "用 PM 判断、交互层级、成熟 UX 和工程闭环约束 Codex 生成产品。",
+    "longDescription": "Codex Product Studio 是一套面向产品开发的可复用 skills，要求 Codex 在写前端代码之前，先完成产品定位、目标用户、功能优先级、通用产品表面、动线模型、交互层级图、默认打开/默认收起规则、浮层/抽屉/命令入口策略、按钮摆放、状态矩阵、设计 token、素材库和前后端契约判断。它帮助减少 PRD 式 UI、随机 dashboard、首屏问卷平铺、功能平铺、缺少收起和悬浮、杂乱按钮、不统一配色、状态缺失和提示词污染，并把测试、发布、监控和反馈纳入完整闭环。",
     "developerName": "Eliayan local workspace",
     "category": "Productivity",
     "capabilities": [
@@ -28,12 +29,14 @@
       "Interactive"
     ],
     "defaultPrompt": [
-      "\u7528\u4ea7\u54c1\u5f00\u53d1\u5de5\u5177\u5305\uff0c\u628a\u8fd9\u4e2a idea \u62c6\u6210\u95ed\u73af\u8ba1\u5212\u3002",
-      "\u5148\u6309 PM \u601d\u7ef4\u68b3\u7406\u529f\u80fd\u4f18\u5148\u7ea7\u3001\u52a8\u7ebf\u6a21\u578b\u3001\u901a\u7528\u4ea7\u54c1\u8868\u9762\u3001\u6309\u94ae\u6446\u653e\u548c 2C \u9996\u5c4f\u7b56\u7565\uff0c\u518d\u6539\u524d\u7aef\u3002",
-      "\u68c0\u67e5\u8fd9\u4e2a\u524d\u7aef\u9875\u9762\u662f\u5426\u50cf\u6210\u719f\u4ea7\u54c1\u3002",
-      "\u628a\u8fd9\u4e2a\u524d\u7aef\u6539\u6210\u6709\u4e13\u4e1a\u8272\u5f69 token\u3001\u6392\u7248\u7f51\u683c\u548c\u89c6\u89c9\u72b6\u6001\u7684\u6210\u719f\u4ea7\u54c1\u3002",
-      "\u8bf7\u7528\u901a\u7528\u5360\u4f4d\u7b26\u548c\u62bd\u8c61\u4ea7\u54c1\u7c7b\u578b\u5199\u89c4\u5219\uff0c\u4e0d\u5f15\u5165\u5176\u4ed6\u9879\u76ee\u7684\u771f\u5b9e\u540d\u8bcd\u3002",
-      "\u505a\u4e0a\u7ebf\u524d\u6d4b\u8bd5\u3001\u53d1\u5e03\u8bf4\u660e\u548c\u53cd\u9988\u95ed\u73af\u3002"
+      "用产品开发工具包，把这个 idea 拆成闭环计划。",
+      "先按 PM 思维梳理功能优先级、动线模型、通用产品表面、交互层级、按钮摆放和 2C 首屏策略，再改前端。",
+      "AI 产品、生成类工具、调研工具和产品启动工具先做输入入口；问卷、参数和确认项必须在用户发送/开始后再出现。",
+      "先产出交互层级图，说明默认展示、默认收起、侧栏、右侧面板、抽屉、浮层、命令菜单和深层详情。",
+      "检查这个前端页面是否像成熟产品。",
+      "把这个前端改成有专业色彩 token、排版网格、视觉状态和交互深浅层级的成熟产品。",
+      "请用通用占位符和抽象产品类型写规则，不引入其他项目的真实名词。",
+      "做上线前测试、发布说明和反馈闭环。"
     ],
     "brandColor": "#256D5A"
   }
